@@ -1,4 +1,8 @@
 package main
 import(
-	_ "github"
+	_ "github.com/boblancer/Post-API/routes"
 )
+
+func main(){
+
+}
