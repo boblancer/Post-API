@@ -1,9 +1,9 @@
 package models
 
-type user struct{
-	ID			*string
-	FirstName 	*string
-	Lastname 	*string
-	Posts 		[]*post
+type User struct{
+	ID			*string `json:"id"`
+	FirstName 	*string	`json:"first_name"`
+	LastName 	*string	`json:"last"`
+	Posts 		[]*post	`json:"posts"`
 
 }

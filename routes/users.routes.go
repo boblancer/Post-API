@@ -1,16 +1,16 @@
 package routes
 
 import (
-	"github.com/boblancer/Post-API/routes"
 	"github.com/labstack/echo"
-	"github.com/boblancer/Post-API/controllers"
+	"post-api/controllers"
 )
 
+
+
 func userRoutes(route *echo.Echo) {
-	user := &controllers.UserController{}
-	err = user.ListUserAll()
-	//route.GET("/users", user.ListUserAll)
-	//route.GET("/users/:id", user.FindByID)
-	//route.POST("/users",user.Add)
+	userController := &controllers.UserController{}
+	route.GET("/users", userController.ListUserAll)
+	route.GET("/users/:id", userController.FindByID)
+	route.POST("/users", userController.Add)
 
 }

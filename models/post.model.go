@@ -1,8 +1,8 @@
 package models
 
-type post struct{
-	ID		*string `json:"Idem"`
-	Header 	*string `json:"Headerem"`
-	Body 	*string `json:"Bodyem"`
+type Post struct{
+	ID		*string `json:"id"`
+	Header 	*string `json:"header"`
+	Body 	*string `json:"body"`
 
 }
