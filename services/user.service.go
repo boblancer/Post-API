@@ -53,5 +53,5 @@ func (UserService) FindAll() ([]models.User, error) {
 		people = append(people, person)
 	}
 	*/
-	return dataUsers, nil
+	//return dataUsers, nil
 }
